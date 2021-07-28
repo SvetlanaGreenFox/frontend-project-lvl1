@@ -5,3 +5,10 @@
 
 ![example workflow](https://github.com/SvetlanaGreenFox/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
 
+#### Asciinema
+
+### Запуск игра Brain-even, демонстрация победы и поражения
+
+<a href="https://asciinema.org/a/UvxMY8SUsLNuGoleu0YfPxRw3"></a>
+
+

@@ -26,18 +26,23 @@ export function startGame() {
             }
 
         } else {
-            switch (answer) {
-                case 'yes':
-                    console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
-
-                case 'no':
-                    console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
-
-                default:
-                    console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes or no'.\nLet's try again, ${userName}!`);
-            }
+            writeError(number, answer);
         }
 
+    }
+
+    function writeError(number, answer) {
+        if (answer != 'yes' && answer != 'no') {
+            if (number % 2 === 0) {
+                console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes.\nLet's try again, ${userName}!`);
+            } else {
+                console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
+            }
+        } else if (answer === 'yes') {
+            console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
+        } else if (answer === 'no') {
+            console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
+        }
     }
 
     function getRndInteger(min, max) {
@@ -46,4 +51,6 @@ export function startGame() {
 
     askQuestion();
 }
+
+
 
