@@ -8,6 +8,4 @@ console.log(`Hi, ${userName}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-//функция запуска игры
-
 startGame();

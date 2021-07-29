@@ -1,10 +1,7 @@
 import readlineSync from 'readline-sync';
 
-//Приветствие
 export const userName = readlineSync.question('May I have your name?');
 
-
-//Поиграем
 export function startGame() {
     let count = 0;
 
