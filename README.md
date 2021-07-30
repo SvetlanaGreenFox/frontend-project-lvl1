@@ -11,4 +11,9 @@
 
 <a href="https://asciinema.org/a/UvxMY8SUsLNuGoleu0YfPxRw3"></a>
 
+### Запуск игра Brain-calc, демонстрация победы и поражения
+
+<a href="https://asciinema.org/a/sUx0DlwuvZGngeQWgYV3h4gua"></a>
+
+
 

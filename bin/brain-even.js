@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-import { userName, startGame } from '../src/even.js';
+import userName, { startGame } from '../src/even.js';
 
-console.log('Welcome to the Brain Games!');
+console.log('Welcome to Brain Games!');
 
 console.log(`Hi, ${userName}!`);
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+console.log('Answer "yes" if number is even, otherwise answer "no".');
 
 startGame();
+
