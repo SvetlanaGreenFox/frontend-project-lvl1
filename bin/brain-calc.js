@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import welcome from '../src/index.js';
 import { startGame } from '../src/calc.js';
 
