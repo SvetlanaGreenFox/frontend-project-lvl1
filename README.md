@@ -9,11 +9,11 @@
 
 ### Запуск игра Brain-even, демонстрация победы и поражения
 
-<a href="https://asciinema.org/a/UvxMY8SUsLNuGoleu0YfPxRw3"></a>
+<a href="https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu"></a>
 
 ### Запуск игра Brain-calc, демонстрация победы и поражения
 
-<a href="https://asciinema.org/a/sUx0DlwuvZGngeQWgYV3h4gua"></a>
+<a href="https://asciinema.org/a/fptIQN5Y6GnrJmDzC6njYqqMW"></a>
 
 
 
