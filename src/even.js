@@ -1,9 +1,24 @@
 import readlineSync from 'readline-sync';
-
-const userName = readlineSync.question('May I have your name?');
+import { getRndInteger, checkAnswer } from './index.js';
 
 export function startGame() {
-    let count = 0;
+    console.log('Welcome to the Brain Games!');
+    const userName = readlineSync.question('May I have your name?');
+    console.log(`Hi, ${userName}!`);
+    console.log('Answer "yes" if the number is even, otherwise answer "no".');
+
+    askQuestion();
+
+    function askQuestion() {
+        let randomNumber = getRndInteger(1, 100);
+        let result = checkEven(randomNumber);
+
+        console.log(`Question: ${randomNumber}`);
+
+        const answer = readlineSync.question('Your answer: ');
+
+        checkAnswer(result, answer, userName, askQuestion);
+    }
 
     function checkEven(num) {
         if (num % 2 === 0) {
@@ -12,53 +27,7 @@ export function startGame() {
             return 'no';
         }
     }
-
-    function askQuestion() {
-        let randomNumber = getRndInteger(1, 100);
-        let result = checkEven(randomNumber);
-        console.log(`Question: ${randomNumber}`);
-        const answer = readlineSync.question('Your answer: ');
-        checkAnswer(result, answer);
-    }
-
-    function checkAnswer(number, answer) {
-        if (number == answer) {
-            console.log('Correct!');
-            count += 1;
-            if (count === 3) {
-                console.log(`Congratulations, ${userName}!`);
-            } else {
-                askQuestion();
-            }
-
-        } else {
-            writeError(number, answer);
-        }
-
-    }
-
-    function writeError(result, answer) {
-        if (result != answer) {
-            console.log(`'${answer}' is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${userName}!`);
-            // if (number % 2 === 0) {
-            //     console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes.\nLet's try again, ${userName}!`);
-            // } else {
-            //     console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
-            // }
-        }
-        // else if (answer === 'yes') {
-        //     console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
-        // } else if (answer === 'no') {
-        //     console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
-        // }
-    }
-
-    function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    askQuestion();
 }
 
-export default userName;
+export default startGame;
 

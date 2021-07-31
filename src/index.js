@@ -1,10 +1,20 @@
-import readlineSync from 'readline-sync';
-
-const welcome = (question) => {
-    const userName = readlineSync.question('May I have your name?');
-    console.log('Welcome to the Brain Games!');
-    console.log(`Hi, ${userName}!`);
-    console.log(question);
+export function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export default welcome;
+let count = 0;
+
+export function checkAnswer(result, answer, name, func) {
+    if (result == answer) {
+        console.log('Correct!');
+        count += 1;
+        if (count === 3) {
+            console.log(`Congratulations, ${name}!`);
+        } else {
+            func();
+        }
+
+    } else {
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${name}!`);
+    }
+}

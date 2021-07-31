@@ -1,9 +1,13 @@
 import readlineSync from 'readline-sync';
-
-const userName = readlineSync.question('May I have your name?');
+import { getRndInteger, checkAnswer } from './index.js';
 
 export function startGame() {
-    let count = 0;
+    console.log('Welcome to the Brain Games!');
+    const userName = readlineSync.question('May I have your name?');
+    console.log(`Hi, ${userName}!`);
+    console.log('What is the result of the expression?');
+
+    askQuestion();
 
     function askQuestion() {
 
@@ -17,33 +21,7 @@ export function startGame() {
 
         const answer = readlineSync.question('Your answer: ');
 
-        checkAnswer(result, answer);
-    }
-
-    function checkAnswer(result, answer) {
-        if (result == answer) {
-            console.log('Correct!');
-            count += 1;
-            if (count === 3) {
-                console.log(`Congratulations, ${userName}!`);
-            } else {
-                askQuestion();
-            }
-
-        } else {
-            writeError(result, answer);
-        }
-
-    }
-
-    function writeError(result, answer) {
-        if (result != answer) {
-            console.log(`'${answer}' is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${userName}!`);
-        }
-    }
-
-    function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
+        checkAnswer(result, answer, userName, askQuestion);
     }
 
     function calculate(a, b, c) {
@@ -56,12 +34,6 @@ export function startGame() {
         }
     }
 
-    function checkCounter() {
-        let count = 0;
-
-    }
-
-    askQuestion();
 }
 
-export default userName;
+export default startGame;
