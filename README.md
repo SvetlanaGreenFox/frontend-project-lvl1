@@ -7,13 +7,17 @@
 
 #### Asciinema
 
-### Запуск игра Brain-even, демонстрация победы и поражения
+### Запуск игры Brain-even, демонстрация победы и поражения
 
 <a href="https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu"></a>
 
-### Запуск игра Brain-calc, демонстрация победы и поражения
+### Запуск игры Brain-calc, демонстрация победы и поражения
 
 <a href="https://asciinema.org/a/fptIQN5Y6GnrJmDzC6njYqqMW"></a>
+
+### Запуск игры Brain-gcd, демонстрация победы и поражения
+
+<a href="https://asciinema.org/a/JkECbbQ0hB4QjX4EujCXir1SO"></a>
 
 
 
