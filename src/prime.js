@@ -7,10 +7,22 @@ export function startGame() {
   console.log(`Hi, ${userName}!`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-  askQuestion();
-
   function askQuestion() {
     const randomNumber = getRndInteger(0, 100);
+
+    function checkPrime(a) {
+      if (a > 2) {
+        for (let i = 2; i < a; i += 1) {
+          if (a % i === 0) {
+            return 'no';
+          }
+        }
+
+        return 'yes';
+      }
+
+      return 'no';
+    }
 
     const result = checkPrime(randomNumber);
 
@@ -21,20 +33,7 @@ export function startGame() {
     checkAnswer(result, answer, userName, askQuestion);
   }
 
-  function checkPrime(a) {
-    if (a > 2) {
-      for (let i = 2; i < a; i++) {
-        if (a % i === 0) {
-          return 'no';
-        }
-      }
-
-      return 'yes';
-    }
-
-    return 'no';
-  }
-
+  askQuestion();
 }
 
 export default startGame;

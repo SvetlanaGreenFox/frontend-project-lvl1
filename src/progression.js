@@ -7,25 +7,22 @@ export function startGame() {
   console.log(`Hi, ${userName}!`);
   console.log('What number is missing in the progression?');
 
-  askQuestion();
-
   function askQuestion() {
+    const arr = [];
 
-    let arr = [];
-
-    let step = getRndInteger(2, 6);
+    const step = getRndInteger(2, 6);
 
     for (let i = getRndInteger(0, 5); i <= 40; i += step) {
       arr.push(i);
     }
 
-    let hiddenNumber = getRndInteger(0, arr.length);
+    const hiddenNumber = getRndInteger(0, arr.length);
 
-    let result = arr[hiddenNumber];
+    const result = arr[hiddenNumber];
 
     arr[hiddenNumber] = '...';
 
-    let newArr = arr.join(' ');
+    const newArr = arr.join(' ');
 
     console.log(`Question: ${newArr}`);
 
@@ -34,6 +31,7 @@ export function startGame() {
     checkAnswer(result, answer, userName, askQuestion);
   }
 
+  askQuestion();
 }
 
 export default startGame;

@@ -7,18 +7,15 @@ export function startGame() {
   console.log(`Hi, ${userName}!`);
   console.log('Find the greatest common divisor of given numbers.');
 
-  const gcd = function (a, b) {
+  const gcd = (a, b) => {
     if (!b) {
       return a;
     }
 
     return gcd(b, a % b);
-  }
-
-  askQuestion();
+  };
 
   function askQuestion() {
-
     const randomNumberOne = getRndInteger(1, 100);
     const randomNumberTwo = getRndInteger(1, 100);
 
@@ -31,6 +28,7 @@ export function startGame() {
     checkAnswer(result, answer, userName, askQuestion);
   }
 
+  askQuestion();
 }
 
 export default startGame;
