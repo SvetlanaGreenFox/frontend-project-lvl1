@@ -23,5 +23,9 @@
 
 <a href="https://asciinema.org/a/rwITHnwqVxhFq75P30ZD2QMM0"></a>
 
+### Запуск игры Brain-prime, демонстрация победы и поражения
+
+<a href="https://asciinema.org/a/nI8bPFag6I5c0EYcnOiL2w4jS"></a>
+
 
 
