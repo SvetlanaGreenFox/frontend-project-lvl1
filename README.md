@@ -19,5 +19,9 @@
 
 <a href="https://asciinema.org/a/JkECbbQ0hB4QjX4EujCXir1SO"></a>
 
+### Запуск игры Brain-progression, демонстрация победы и поражения
+
+<a href="https://asciinema.org/a/rwITHnwqVxhFq75P30ZD2QMM0"></a>
+
 
 

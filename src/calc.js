@@ -10,7 +10,6 @@ export function startGame() {
     askQuestion();
 
     function askQuestion() {
-
         const randomNumberOne = getRndInteger(1, 20);
         const randomNumberTwo = getRndInteger(1, 20);
         const arrOperators = ['+', '-', '*'];

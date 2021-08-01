@@ -13,14 +13,16 @@ export function startGame() {
 
     let arr = [];
 
-    for (let i = getRndInteger(0, 5); i <= 60; i += getRndInteger(2, 6)) {
+    let step = getRndInteger(2, 6);
+
+    for (let i = getRndInteger(0, 5); i <= 40; i += step) {
       arr.push(i);
     }
 
     let hiddenNumber = getRndInteger(0, arr.length);
 
     let result = arr[hiddenNumber];
-    console.log(result);
+
     arr[hiddenNumber] = '...';
 
     let newArr = arr.join(' ');
