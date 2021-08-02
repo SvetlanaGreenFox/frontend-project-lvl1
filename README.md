@@ -9,23 +9,23 @@
 
 ### Запуск игры Brain-even, демонстрация победы и поражения
 
-<a href="https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu"></a>
+https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu
 
 ### Запуск игры Brain-calc, демонстрация победы и поражения
 
-<a href="https://asciinema.org/a/fptIQN5Y6GnrJmDzC6njYqqMW"></a>
+https://asciinema.org/a/fptIQN5Y6GnrJmDzC6njYqqMW
 
 ### Запуск игры Brain-gcd, демонстрация победы и поражения
 
-<a href="https://asciinema.org/a/JkECbbQ0hB4QjX4EujCXir1SO"></a>
+https://asciinema.org/a/JkECbbQ0hB4QjX4EujCXir1SO
 
 ### Запуск игры Brain-progression, демонстрация победы и поражения
 
-<a href="https://asciinema.org/a/rwITHnwqVxhFq75P30ZD2QMM0"></a>
+https://asciinema.org/a/rwITHnwqVxhFq75P30ZD2QMM0"
 
 ### Запуск игры Brain-prime, демонстрация победы и поражения
 
-<a href="https://asciinema.org/a/nI8bPFag6I5c0EYcnOiL2w4jS"></a>
+https://asciinema.org/a/nI8bPFag6I5c0EYcnOiL2w4jS
 
 
 
