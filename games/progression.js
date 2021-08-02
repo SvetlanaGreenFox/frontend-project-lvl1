@@ -18,7 +18,7 @@ export function startGame() {
 
     const hiddenNumber = getRndInteger(0, arr.length);
 
-    const result = (arr[hiddenNumber]).toString();
+    const result = arr[hiddenNumber].toString();
 
     arr[hiddenNumber] = '..';
 

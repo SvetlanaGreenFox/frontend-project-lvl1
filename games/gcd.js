@@ -19,7 +19,7 @@ export function startGame() {
     const randomNumberOne = getRndInteger(1, 100);
     const randomNumberTwo = getRndInteger(1, 100);
 
-    const result = (gcd(randomNumberOne, randomNumberTwo)).toString();
+    const result = gcd(randomNumberOne, randomNumberTwo).toString();
 
     console.log(`Question: ${randomNumberOne} ${randomNumberTwo}`);
 

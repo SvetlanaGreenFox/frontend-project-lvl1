@@ -23,7 +23,7 @@ export function startGame() {
       return (a * b);
     }
 
-    const result = (calculate(randomNumberOne, randomNumberTwo, operator)).toString();
+    const result = calculate(randomNumberOne, randomNumberTwo, operator).toString();
 
     console.log(`Question: ${randomNumberOne} ${operator} ${randomNumberTwo}`);
 
