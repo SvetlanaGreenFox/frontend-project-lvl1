@@ -4,7 +4,7 @@ import { getRndInteger, checkAnswer } from '../src/index.js';
 export function startGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
-  console.log(`Hi, ${userName}!`);
+  console.log(`Hello, ${userName}!`);
   console.log('What number is missing in the progression?');
 
   function askQuestion() {
@@ -20,7 +20,7 @@ export function startGame() {
 
     const result = (arr[hiddenNumber]).toString();
 
-    arr[hiddenNumber] = '...';
+    arr[hiddenNumber] = '..';
 
     const newArr = arr.join(' ');
 
