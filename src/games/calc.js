@@ -7,6 +7,8 @@ export const createGame = () => {
   console.log(`Hello, ${userName}!`);
   console.log('What is the result of the expression?');
 
+  let count = 0;
+
   const askQuestion = () => {
     const randomNumberOne = getRndInteger(1, 20);
     const randomNumberTwo = getRndInteger(1, 20);
@@ -29,7 +31,9 @@ export const createGame = () => {
 
     const answer = readlineSync.question('Your answer: ');
 
-    checkAnswer(result, answer, userName, askQuestion);
+    count += 1;
+
+    checkAnswer(result, answer, userName, askQuestion, count);
   }
 
   askQuestion();

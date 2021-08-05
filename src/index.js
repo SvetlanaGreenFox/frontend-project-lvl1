@@ -2,12 +2,9 @@ export const getRndInteger = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let count = 0;
-
-export const checkAnswer = (result, answer, name, func) => {
+export const checkAnswer = (result, answer, name, func, count) => {
   if (result === answer) {
     console.log('Correct!');
-    count += 1;
     if (count === 3) {
       console.log(`Congratulations, ${name}!`);
     } else {

@@ -7,6 +7,8 @@ export const createGame = () => {
   console.log(`Hello, ${userName}!`);
   console.log('Find the greatest common divisor of given numbers.');
 
+  let count = 0;
+
   const gcd = (a, b) => {
     if (!b) {
       return a;
@@ -25,7 +27,8 @@ export const createGame = () => {
 
     const answer = readlineSync.question('Your answer: ');
 
-    checkAnswer(result, answer, userName, askQuestion);
+    count += 1;
+    checkAnswer(result, answer, userName, askQuestion, count);
   }
 
   askQuestion();

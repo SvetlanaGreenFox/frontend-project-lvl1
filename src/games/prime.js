@@ -7,6 +7,8 @@ export const createGame = () => {
   console.log(`Hello, ${userName}!`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
+  let count = 0;
+
   const askQuestion = () => {
     const randomNumber = getRndInteger(0, 100);
 
@@ -30,7 +32,9 @@ export const createGame = () => {
 
     const answer = readlineSync.question('Your answer: ');
 
-    checkAnswer(result, answer, userName, askQuestion);
+    count += 1;
+
+    checkAnswer(result, answer, userName, askQuestion, count);
   }
 
   askQuestion();
