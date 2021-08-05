@@ -3,12 +3,12 @@ import { getRndInteger, checkAnswer } from '../index.js';
 
 let count = 0;
 
-const gcd = (a, b) => {
-  if (!b) {
-    return a;
+const gcd = (firstValue, secondValue) => {
+  if (!secondValue) {
+    return firstValue;
   }
 
-  return gcd(b, a % b);
+  return gcd(secondValue, firstValue % secondValue);
 };
 
 const askQuestion = (userName) => {

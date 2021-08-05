@@ -3,10 +3,10 @@ import { getRndInteger, checkAnswer } from '../index.js';
 
 let count = 0;
 
-const checkPrime = (a) => {
-  if (a > 2) {
-    for (let i = 2; i < a; i += 1) {
-      if (a % i === 0) {
+const checkPrime = (value) => {
+  if (value > 2) {
+    for (let i = 2; i < value; i += 1) {
+      if (value % i === 0) {
         return 'no';
       }
     }
