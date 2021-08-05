@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRndInteger, checkAnswer } from '../src/index.js';
+import { getRndInteger, checkAnswer } from '../index.js';
 
 export function createGame() {
   console.log('Welcome to the Brain Games!');
