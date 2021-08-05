@@ -17,8 +17,8 @@ const calculate = (firstValue, secondValue, operator) => {
 const askQuestion = (userName) => {
   const randomNumberOne = getRndInteger(1, 20);
   const randomNumberTwo = getRndInteger(1, 20);
-  const arrOperators = ['+', '-', '*'];
-  const operator = arrOperators[getRndInteger(0, 2)];
+  const operators = ['+', '-', '*'];
+  const operator = operators[getRndInteger(0, 2)];
 
   const result = calculate(randomNumberOne, randomNumberTwo, operator).toString();
 

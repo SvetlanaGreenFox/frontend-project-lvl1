@@ -4,23 +4,23 @@ import { getRndInteger, checkAnswer } from '../index.js';
 let count = 0;
 
 const askQuestion = (userName) => {
-  const arr = [];
+  const combinationNum = [];
 
   const step = getRndInteger(2, 6);
 
   for (let i = getRndInteger(0, 5); i <= 40; i += step) {
-    arr.push(i);
+    combinationNum.push(i);
   }
 
-  const hiddenNumber = getRndInteger(0, arr.length);
+  const hiddenNumber = getRndInteger(0, combinationNum.length);
 
-  const result = arr[hiddenNumber].toString();
+  const result = combinationNum[hiddenNumber].toString();
 
-  arr[hiddenNumber] = '..';
+  combinationNum[hiddenNumber] = '..';
 
-  const newArr = arr.join(' ');
+  const convertedComb = combinationNum.join(' ');
 
-  console.log(`Question: ${newArr}`);
+  console.log(`Question: ${convertedComb}`);
 
   const answer = readlineSync.question('Your answer: ');
 
