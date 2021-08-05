@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRndInteger, checkAnswer } from '../index.js';
 
-export function createGame() {
+export const createGame = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
   console.log(`Hello, ${userName}!`);
@@ -15,7 +15,7 @@ export function createGame() {
     return gcd(b, a % b);
   };
 
-  function askQuestion() {
+  const askQuestion = () => {
     const randomNumberOne = getRndInteger(1, 100);
     const randomNumberTwo = getRndInteger(1, 100);
 

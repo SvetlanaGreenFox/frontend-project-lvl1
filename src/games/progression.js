@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 import { getRndInteger, checkAnswer } from '../index.js';
 
-export function createGame() {
+export const createGame = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
   console.log(`Hello, ${userName}!`);
   console.log('What number is missing in the progression?');
 
-  function askQuestion() {
+  const askQuestion = () => {
     const arr = [];
 
     const step = getRndInteger(2, 6);

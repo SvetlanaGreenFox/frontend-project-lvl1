@@ -1,16 +1,16 @@
 import readlineSync from 'readline-sync';
 import { getRndInteger, checkAnswer } from '../index.js';
 
-export function createGame() {
+export const createGame = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
   console.log(`Hello, ${userName}!`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-  function askQuestion() {
+  const askQuestion = () => {
     const randomNumber = getRndInteger(0, 100);
 
-    function checkPrime(a) {
+    const checkPrime = (a) => {
       if (a > 2) {
         for (let i = 2; i < a; i += 1) {
           if (a % i === 0) {
