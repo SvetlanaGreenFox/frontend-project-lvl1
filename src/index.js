@@ -8,7 +8,7 @@ export const checkAnswer = (result, answer, name, func, count) => {
     if (count === 3) {
       console.log(`Congratulations, ${name}!`);
     } else {
-      func();
+      func(name);
     }
   } else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${name}!`);
