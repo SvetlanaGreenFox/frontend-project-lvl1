@@ -4,13 +4,14 @@ import { getRndInteger, checkAnswer } from '../index.js';
 let count = 0;
 
 const calculate = (firstValue, secondValue, operator) => {
-  if (operator === '+') {
-    return (firstValue + secondValue);
+  switch (operator) {
+    case '+':
+      return (firstValue + secondValue);
+    case '-':
+      return (firstValue - secondValue);
+    case '*':
+      return (firstValue * secondValue);
   }
-  if (operator === '-') {
-    return (firstValue - secondValue);
-  }
-  return (firstValue * secondValue);
 }
 
 const askQuestion = (userName) => {
