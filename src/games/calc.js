@@ -15,14 +15,14 @@ const calculate = (firstValue, secondValue, operator) => {
 }
 
 const askQuestion = (userName) => {
-  const randomNumberOne = getRndInteger(1, 20);
-  const randomNumberTwo = getRndInteger(1, 20);
+  const number1 = getRndInteger(1, 20);
+  const number2 = getRndInteger(1, 20);
   const operators = ['+', '-', '*'];
   const operator = operators[getRndInteger(0, 2)];
 
-  const result = calculate(randomNumberOne, randomNumberTwo, operator).toString();
+  const result = calculate(number1, number2, operator).toString();
 
-  console.log(`Question: ${randomNumberOne} ${operator} ${randomNumberTwo}`);
+  console.log(`Question: ${number1} ${operator} ${number2}`);
 
   const answer = readlineSync.question('Your answer: ');
 

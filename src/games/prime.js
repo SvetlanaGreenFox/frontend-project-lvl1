@@ -4,17 +4,17 @@ import { getRndInteger, checkAnswer } from '../index.js';
 let count = 0;
 
 const checkPrime = (value) => {
-  if (value > 2) {
-    for (let i = 2; i < value; i += 1) {
-      if (value % i === 0) {
-        return 'no';
-      }
-    }
-
-    return 'yes';
+  if (value < 2) {
+    return 'no';
   }
 
-  return 'no';
+  for (let i = 2; i < value; i += 1) {
+    if (value % i === 0) {
+      return 'no';
+    }
+  }
+
+  return 'yes';
 }
 
 const askQuestion = (userName) => {

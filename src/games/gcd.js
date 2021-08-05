@@ -12,12 +12,12 @@ const gcd = (firstValue, secondValue) => {
 };
 
 const askQuestion = (userName) => {
-  const randomNumberOne = getRndInteger(1, 100);
-  const randomNumberTwo = getRndInteger(1, 100);
+  const number1 = getRndInteger(1, 100);
+  const number2 = getRndInteger(1, 100);
 
-  const result = gcd(randomNumberOne, randomNumberTwo).toString();
+  const result = gcd(number1, number2).toString();
 
-  console.log(`Question: ${randomNumberOne} ${randomNumberTwo}`);
+  console.log(`Question: ${number1} ${number2}`);
 
   const answer = readlineSync.question('Your answer: ');
 
