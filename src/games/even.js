@@ -1,32 +1,28 @@
-import readlineSync from 'readline-sync';
-import { getRndInteger, checkAnswer } from '../index.js';
+import { madeGame, getRndInteger } from '../index.js';
 
-let count = 0;
+const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const checkEven = (num) => {
-  if (num % 2 === 0) {
+const getCorrectAnswer = (task) => {
+  const expectedAnswer = checkEven(task);
+
+  if (expectedAnswer) {
     return 'yes';
+  } else {
+    return 'no';
   }
-  return 'no';
 }
 
-const askQuestion = (userName) => {
+const makeTask = () => {
   const randomNumber = getRndInteger(1, 100);
-  const result = checkEven(randomNumber);
-  console.log(`Question: ${randomNumber}`);
-  const answer = readlineSync.question('Your answer: ');
-
-  count += 1;
-  checkAnswer(result, answer, userName, askQuestion, count);
+  const result = getCorrectAnswer(randomNumber);
+  return [randomNumber, result];
 }
 
-export const createGame = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const checkEven = number => number % 2 === 0;
 
-  askQuestion(userName);
-}
 
-export default createGame;
+
+
+const startGame = () => madeGame(task, makeTask);
+
+export default startGame;

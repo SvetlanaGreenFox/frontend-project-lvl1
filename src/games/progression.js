@@ -1,9 +1,8 @@
-import readlineSync from 'readline-sync';
-import { getRndInteger, checkAnswer } from '../index.js';
+import { madeGame, getRndInteger } from '../index.js';
 
-let count = 0;
+const task = 'What number is missing in the progression?';
 
-const askQuestion = (userName) => {
+const makeTask = () => {
   const combinationNum = [];
   const step = getRndInteger(2, 6);
 
@@ -14,22 +13,11 @@ const askQuestion = (userName) => {
   const hiddenNumber = getRndInteger(0, combinationNum.length);
   const result = combinationNum[hiddenNumber].toString();
   combinationNum[hiddenNumber] = '..';
-  const convertedComb = combinationNum.join(' ');
-  console.log(`Question: ${convertedComb}`);
-  const answer = readlineSync.question('Your answer: ');
+  const task = combinationNum.join(' ');
 
-  count += 1;
-
-  checkAnswer(result, answer, userName, askQuestion, count);
+  return [task, result];
 }
 
-export const createGame = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-  console.log('What number is missing in the progression?');
+const startGame = () => madeGame(task, makeTask);
 
-  askQuestion(userName);
-}
-
-export default createGame;
+export default startGame;

@@ -1,9 +1,8 @@
-import readlineSync from 'readline-sync';
-import { getRndInteger, checkAnswer } from '../index.js';
+import { madeGame, getRndInteger } from '../index.js';
 
-let count = 0;
+const task = 'What is the result of the expression?';
 
-const calculate = (firstValue, secondValue, operator) => {
+const getCorrectAnswer = (firstValue, secondValue, operator) => {
   switch (operator) {
     case '+':
       return (firstValue + secondValue);
@@ -14,30 +13,17 @@ const calculate = (firstValue, secondValue, operator) => {
   }
 }
 
-const askQuestion = (userName) => {
+const makeTask = () => {
   const number1 = getRndInteger(1, 20);
   const number2 = getRndInteger(1, 20);
   const operators = ['+', '-', '*'];
   const operator = operators[getRndInteger(0, 2)];
+  const task = `${number1} ${operator} ${number2}`;
+  const result = getCorrectAnswer(number1, number2, operator).toString();
 
-  const result = calculate(number1, number2, operator).toString();
-
-  console.log(`Question: ${number1} ${operator} ${number2}`);
-
-  const answer = readlineSync.question('Your answer: ');
-
-  count += 1;
-
-  checkAnswer(result, answer, userName, askQuestion, count);
+  return [task, result];
 }
 
-export const createGame = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-  console.log('What is the result of the expression?');
+const startGame = () => madeGame(task, makeTask);
 
-  askQuestion(userName);
-}
-
-export default createGame;
+export default startGame;
