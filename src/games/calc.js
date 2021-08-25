@@ -1,17 +1,24 @@
 import { madeGame, getRndInteger } from '../index.js';
 
-const task = 'What is the result of the expression?';
+const taskDescription = 'What is the result of the expression?';
 
 const getCorrectAnswer = (firstValue, secondValue, operator) => {
+  let result = 0;
   switch (operator) {
     case '+':
-      return (firstValue + secondValue);
+      result = firstValue + secondValue;
+      break;
     case '-':
-      return (firstValue - secondValue);
+      result = firstValue - secondValue;
+      break;
     case '*':
-      return (firstValue * secondValue);
+      result = firstValue * secondValue;
+      break;
+    default:
   }
-}
+
+  return result;
+};
 
 const makeTask = () => {
   const number1 = getRndInteger(1, 20);
@@ -22,8 +29,8 @@ const makeTask = () => {
   const result = getCorrectAnswer(number1, number2, operator).toString();
 
   return [task, result];
-}
+};
 
-const startGame = () => madeGame(task, makeTask);
+const startGame = () => madeGame(taskDescription, makeTask);
 
 export default startGame;
