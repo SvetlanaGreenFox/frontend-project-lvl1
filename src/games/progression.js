@@ -11,7 +11,7 @@ const makeTask = () => {
   }
 
   const hiddenNumber = getRndInteger(0, combinationNum.length);
-  const result = combinationNum[hiddenNumber].toString();
+  const result = (combinationNum[hiddenNumber]).toString();
   combinationNum[hiddenNumber] = '..';
   const task = combinationNum.join(' ');
 
