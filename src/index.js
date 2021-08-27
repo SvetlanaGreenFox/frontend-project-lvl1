@@ -20,7 +20,8 @@ export const madeGame = (taskDescription, makeTask) => {
     console.log(expression);
     const output = expression[0];
     const correctAnswer = expression[1];
-    const answer = readlineSync.question(`Question: ${output}\nYour answer: `);
+    console.log(`Question: ${output}`);
+    const answer = readlineSync.question('Your answer: ');
     const check = checkAnswer(correctAnswer, answer);
 
     if (check) {
