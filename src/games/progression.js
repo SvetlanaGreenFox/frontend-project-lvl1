@@ -11,11 +11,11 @@ const makeTask = () => {
   }
 
   const hiddenNumber = getRndInteger(0, combinationNum.length);
-  const result = (combinationNum[hiddenNumber]).toString();
+  const result = combinationNum[hiddenNumber];
   combinationNum[hiddenNumber] = '..';
   const task = combinationNum.join(' ');
 
-  return [task, result];
+  return [task, result.toString()];
 };
 
 const startGame = () => madeGame(taskDescription, makeTask);
