@@ -17,12 +17,12 @@ const getCorrectAnswer = (number) => {
   return 'yes';
 };
 
-const makeTask = () => {
+const getGameData = () => {
   const randomNumber = getRndInteger(1, 100);
   const result = getCorrectAnswer(randomNumber).toString();
   return [randomNumber, result];
 };
 
-const startGame = () => madeGame(taskDescription, makeTask);
+const startGame = () => madeGame(taskDescription, getGameData);
 
 export default startGame;

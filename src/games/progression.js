@@ -3,7 +3,7 @@ import getRndInteger from '../utils.js';
 
 const taskDescription = 'What number is missing in the progression?';
 
-const makeTask = () => {
+const getGameData = () => {
   const combinationNum = [];
   const step = getRndInteger(2, 6);
 
@@ -19,6 +19,6 @@ const makeTask = () => {
   return [task, result.toString()];
 };
 
-const startGame = () => madeGame(taskDescription, makeTask);
+const startGame = () => madeGame(taskDescription, getGameData);
 
 export default startGame;

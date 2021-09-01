@@ -11,7 +11,7 @@ const gcd = (firstValue, secondValue) => {
   return gcd(secondValue, firstValue % secondValue);
 };
 
-const makeTask = () => {
+const getGameData = () => {
   const number1 = getRndInteger(1, 100);
   const number2 = getRndInteger(1, 100);
   const task = `${number1} ${number2}`;
@@ -20,6 +20,6 @@ const makeTask = () => {
   return [task, result];
 };
 
-const startGame = () => madeGame(taskDescription, makeTask);
+const startGame = () => madeGame(taskDescription, getGameData);
 
 export default startGame;

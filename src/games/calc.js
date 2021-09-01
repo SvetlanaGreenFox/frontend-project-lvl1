@@ -21,7 +21,7 @@ const getCorrectAnswer = (firstValue, secondValue, operator) => {
   return result;
 };
 
-const makeTask = () => {
+const getGameData = () => {
   const number1 = getRndInteger(1, 20);
   const number2 = getRndInteger(1, 20);
   const operators = ['+', '-', '*'];
@@ -32,6 +32,6 @@ const makeTask = () => {
   return [task, result];
 };
 
-const startGame = () => madeGame(taskDescription, makeTask);
+const startGame = () => madeGame(taskDescription, getGameData);
 
 export default startGame;
