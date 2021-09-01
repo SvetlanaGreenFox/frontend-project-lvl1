@@ -3,20 +3,26 @@ import getRndInteger from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const getGameData = () => {
+const getProgression = (start, step, length) => {
   const combinationNum = [];
-  const step = getRndInteger(2, 6);
+  const limit = start + length * step;
 
-  for (let i = getRndInteger(0, 5); i <= 40; i += step) {
+  for (let i = start; i < limit; i += step) {
     combinationNum.push(i);
   }
 
+  return combinationNum;
+};
+
+const getGameData = () => {
+  const combinationNum = getProgression(3, getRndInteger(0, 5), getRndInteger(10, 15));
+
   const hiddenNumber = getRndInteger(0, combinationNum.length);
-  const correctAnswer = combinationNum[hiddenNumber];
+  const correctAnswer = combinationNum[hiddenNumber].toString();
   combinationNum[hiddenNumber] = '..';
   const question = combinationNum.join(' ');
 
-  return [question, correctAnswer.toString()];
+  return [question, correctAnswer];
 };
 
 const startGame = () => madeGame(gameDescription, getGameData);
