@@ -15,7 +15,7 @@ const getProgression = (start, step, length) => {
 };
 
 const getGameData = () => {
-  const combinationNum = getProgression(3, getRndInteger(0, 5), getRndInteger(10, 15));
+  const combinationNum = getProgression(3, getRndInteger(1, 5), getRndInteger(10, 15));
 
   const hiddenNumber = getRndInteger(0, combinationNum.length - 1);
   const correctAnswer = combinationNum[hiddenNumber].toString();
