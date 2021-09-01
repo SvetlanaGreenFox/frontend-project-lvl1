@@ -21,9 +21,9 @@ const getGameData = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[getRndInteger(0, operators.length - 1)];
   const question = `${number1} ${operator} ${number2}`;
-  const result = calculateAnswer(number1, number2, operator).toString();
+  const correctAnswer = calculateAnswer(number1, number2, operator).toString();
 
-  return [question, result];
+  return [question, correctAnswer];
 };
 
 const startGame = () => madeGame(gameDescription, getGameData);

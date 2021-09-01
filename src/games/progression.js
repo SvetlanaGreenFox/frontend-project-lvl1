@@ -12,11 +12,11 @@ const getGameData = () => {
   }
 
   const hiddenNumber = getRndInteger(0, combinationNum.length);
-  const result = combinationNum[hiddenNumber];
+  const correctAnswer = combinationNum[hiddenNumber];
   combinationNum[hiddenNumber] = '..';
   const question = combinationNum.join(' ');
 
-  return [question, result.toString()];
+  return [question, correctAnswer.toString()];
 };
 
 const startGame = () => madeGame(gameDescription, getGameData);

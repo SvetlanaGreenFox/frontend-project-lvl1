@@ -15,9 +15,9 @@ const getGameData = () => {
   const number1 = getRndInteger(1, 100);
   const number2 = getRndInteger(1, 100);
   const question = `${number1} ${number2}`;
-  const result = gcd(number1, number2).toString();
+  const correctAnswer = gcd(number1, number2).toString();
 
-  return [question, result];
+  return [question, correctAnswer];
 };
 
 const startGame = () => madeGame(gameDescription, getGameData);

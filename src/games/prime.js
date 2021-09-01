@@ -19,8 +19,8 @@ const getCorrectAnswer = (number) => {
 
 const getGameData = () => {
   const randomNumber = getRndInteger(1, 100);
-  const result = getCorrectAnswer(randomNumber).toString();
-  return [randomNumber, result];
+  const correctAnswer = getCorrectAnswer(randomNumber).toString();
+  return [randomNumber, correctAnswer];
 };
 
 const startGame = () => madeGame(gameDescription, getGameData);
