@@ -3,19 +3,19 @@ import getRndInteger from '../utils.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
-const gcd = (firstValue, secondValue) => {
+const getGcd = (firstValue, secondValue) => {
   if (!secondValue) {
     return firstValue;
   }
 
-  return gcd(secondValue, firstValue % secondValue);
+  return getGcd(secondValue, firstValue % secondValue);
 };
 
 const getGameData = () => {
   const number1 = getRndInteger(1, 100);
   const number2 = getRndInteger(1, 100);
   const question = `${number1} ${number2}`;
-  const correctAnswer = gcd(number1, number2).toString();
+  const correctAnswer = getGcd(number1, number2).toString();
 
   return [question, correctAnswer];
 };
