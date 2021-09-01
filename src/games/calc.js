@@ -1,4 +1,5 @@
-import { madeGame, getRndInteger } from '../index.js';
+import { madeGame } from '../index.js';
+import getRndInteger from '../utils.js';
 
 const taskDescription = 'What is the result of the expression?';
 

@@ -1,4 +1,5 @@
-import { madeGame, getRndInteger } from '../index.js';
+import { madeGame } from '../index.js';
+import getRndInteger from '../utils.js';
 
 const taskDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 

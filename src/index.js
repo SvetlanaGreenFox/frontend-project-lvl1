@@ -1,10 +1,5 @@
 import readlineSync from 'readline-sync';
 
-export const getRndInteger = (min, max) => {
-  const result = Math.floor(Math.random() * (max - min + 1)) + min;
-  return result;
-};
-
 const checkAnswer = (answer, expectedAnswer) => answer === expectedAnswer;
 
 export const madeGame = (taskDescription, makeTask) => {
@@ -17,7 +12,6 @@ export const madeGame = (taskDescription, makeTask) => {
 
   for (let i = 0; i < countRounds; i += 1) {
     const expression = makeTask();
-    console.log(expression);
     const output = expression[0];
     const correctAnswer = expression[1];
     console.log(`Question: ${output}`);
