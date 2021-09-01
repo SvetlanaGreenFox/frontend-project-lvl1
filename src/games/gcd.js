@@ -1,4 +1,4 @@
-import { madeGame } from '../index.js';
+import madeGame from '../index.js';
 import getRndInteger from '../utils.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';

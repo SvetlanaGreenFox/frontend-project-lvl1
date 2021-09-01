@@ -1,18 +1,25 @@
-import { madeGame } from '../index.js';
+import madeGame from '../index.js';
 import getRndInteger from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 
 const calculateAnswer = (firstValue, secondValue, operator) => {
+  let result = null;
+
   switch (operator) {
     case '+':
-      return firstValue + secondValue;
+      result = firstValue + secondValue;
+      break;
     case '-':
-      return firstValue - secondValue;
+      result = firstValue - secondValue;
+      break;
     case '*':
-      return firstValue * secondValue;
+      result = firstValue * secondValue;
+      break;
     default:
   }
+
+  return result;
 };
 
 const getGameData = () => {

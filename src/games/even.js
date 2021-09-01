@@ -1,4 +1,4 @@
-import { madeGame } from '../index.js';
+import madeGame from '../index.js';
 import getRndInteger from '../utils.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';

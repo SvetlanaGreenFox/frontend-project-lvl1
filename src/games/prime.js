@@ -1,4 +1,4 @@
-import { madeGame } from '../index.js';
+import madeGame from '../index.js';
 import getRndInteger from '../utils.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
