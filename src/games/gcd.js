@@ -14,10 +14,10 @@ const gcd = (firstValue, secondValue) => {
 const getGameData = () => {
   const number1 = getRndInteger(1, 100);
   const number2 = getRndInteger(1, 100);
-  const task = `${number1} ${number2}`;
+  const question = `${number1} ${number2}`;
   const result = gcd(number1, number2).toString();
 
-  return [task, result];
+  return [question, result];
 };
 
 const startGame = () => madeGame(gameDescription, getGameData);

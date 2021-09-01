@@ -5,8 +5,8 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 
 const checkEven = (number) => number % 2 === 0;
 
-const getCorrectAnswer = (task) => {
-  const expectedAnswer = checkEven(task);
+const getCorrectAnswer = (question) => {
+  const expectedAnswer = checkEven(question);
 
   if (expectedAnswer) {
     return 'yes';

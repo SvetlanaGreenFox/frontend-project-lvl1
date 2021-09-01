@@ -14,9 +14,9 @@ const getGameData = () => {
   const hiddenNumber = getRndInteger(0, combinationNum.length);
   const result = combinationNum[hiddenNumber];
   combinationNum[hiddenNumber] = '..';
-  const task = combinationNum.join(' ');
+  const question = combinationNum.join(' ');
 
-  return [task, result.toString()];
+  return [question, result.toString()];
 };
 
 const startGame = () => madeGame(gameDescription, getGameData);
