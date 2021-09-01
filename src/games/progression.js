@@ -17,12 +17,12 @@ const getProgression = (start, step, length) => {
 const getGameData = () => {
   const combinationNum = getProgression(3, getRndInteger(0, 5), getRndInteger(10, 15));
 
-  const hiddenNumber = getRndInteger(0, combinationNum.length);
-  const correctAnswer = combinationNum[hiddenNumber];
+  const hiddenNumber = getRndInteger(0, combinationNum.length - 1);
+  const correctAnswer = combinationNum[hiddenNumber].toString();
   combinationNum[hiddenNumber] = '..';
   const question = combinationNum.join(' ');
 
-  return [question, correctAnswer.toString()];
+  return [question, correctAnswer];
 };
 
 const startGame = () => madeGame(gameDescription, getGameData);
