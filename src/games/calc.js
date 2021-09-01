@@ -3,7 +3,7 @@ import getRndInteger from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const getCorrectAnswer = (firstValue, secondValue, operator) => {
+const calculateAnswer = (firstValue, secondValue, operator) => {
   switch (operator) {
     case '+':
       return firstValue + secondValue;
@@ -21,7 +21,7 @@ const getGameData = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[getRndInteger(0, 2)];
   const task = `${number1} ${operator} ${number2}`;
-  const result = getCorrectAnswer(number1, number2, operator).toString();
+  const result = calculateAnswer(number1, number2, operator).toString();
 
   return [task, result];
 };
