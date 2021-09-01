@@ -5,19 +5,9 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 
 const isEven = (number) => number % 2 === 0;
 
-const getCorrectAnswer = (question) => {
-  const expectedAnswer = isEven(question);
-
-  if (expectedAnswer) {
-    return 'yes';
-  }
-
-  return 'no';
-};
-
 const getGameData = () => {
   const randomNumber = getRndInteger(1, 100);
-  const correctAnswer = getCorrectAnswer(randomNumber);
+  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return [randomNumber, correctAnswer];
 };
 
