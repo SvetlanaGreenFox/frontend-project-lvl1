@@ -4,21 +4,15 @@ import getRndInteger from '../utils.js';
 const gameDescription = 'What is the result of the expression?';
 
 const getCorrectAnswer = (firstValue, secondValue, operator) => {
-  let result = 0;
   switch (operator) {
     case '+':
-      result = firstValue + secondValue;
-      break;
+      return firstValue + secondValue;
     case '-':
-      result = firstValue - secondValue;
-      break;
+      return firstValue - secondValue;
     case '*':
-      result = firstValue * secondValue;
-      break;
+      return firstValue * secondValue;
     default:
   }
-
-  return result;
 };
 
 const getGameData = () => {
