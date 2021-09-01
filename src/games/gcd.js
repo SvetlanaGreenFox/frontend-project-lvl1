@@ -1,7 +1,7 @@
 import { madeGame } from '../index.js';
 import getRndInteger from '../utils.js';
 
-const taskDescription = 'Find the greatest common divisor of given numbers.';
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (firstValue, secondValue) => {
   if (!secondValue) {
@@ -20,6 +20,6 @@ const getGameData = () => {
   return [task, result];
 };
 
-const startGame = () => madeGame(taskDescription, getGameData);
+const startGame = () => madeGame(gameDescription, getGameData);
 
 export default startGame;

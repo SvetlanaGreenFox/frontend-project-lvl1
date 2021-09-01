@@ -1,7 +1,7 @@
 import { madeGame } from '../index.js';
 import getRndInteger from '../utils.js';
 
-const taskDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getCorrectAnswer = (number) => {
   if (number < 2) {
@@ -23,6 +23,6 @@ const getGameData = () => {
   return [randomNumber, result];
 };
 
-const startGame = () => madeGame(taskDescription, getGameData);
+const startGame = () => madeGame(gameDescription, getGameData);
 
 export default startGame;

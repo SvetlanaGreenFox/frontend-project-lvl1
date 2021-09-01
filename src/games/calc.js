@@ -1,7 +1,7 @@
 import { madeGame } from '../index.js';
 import getRndInteger from '../utils.js';
 
-const taskDescription = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
 
 const getCorrectAnswer = (firstValue, secondValue, operator) => {
   let result = 0;
@@ -32,6 +32,6 @@ const getGameData = () => {
   return [task, result];
 };
 
-const startGame = () => madeGame(taskDescription, getGameData);
+const startGame = () => madeGame(gameDescription, getGameData);
 
 export default startGame;

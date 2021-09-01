@@ -1,7 +1,7 @@
 import { madeGame } from '../index.js';
 import getRndInteger from '../utils.js';
 
-const taskDescription = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the progression?';
 
 const getGameData = () => {
   const combinationNum = [];
@@ -19,6 +19,6 @@ const getGameData = () => {
   return [task, result.toString()];
 };
 
-const startGame = () => madeGame(taskDescription, getGameData);
+const startGame = () => madeGame(gameDescription, getGameData);
 
 export default startGame;

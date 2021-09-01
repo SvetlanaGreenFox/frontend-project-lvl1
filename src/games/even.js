@@ -1,7 +1,7 @@
 import { madeGame } from '../index.js';
 import getRndInteger from '../utils.js';
 
-const taskDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const checkEven = (number) => number % 2 === 0;
 
@@ -21,6 +21,6 @@ const getGameData = () => {
   return [randomNumber, result];
 };
 
-const startGame = () => madeGame(taskDescription, getGameData);
+const startGame = () => madeGame(gameDescription, getGameData);
 
 export default startGame;
