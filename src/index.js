@@ -10,9 +10,9 @@ export const madeGame = (taskDescription, getGameData) => {
 
   for (let i = 0; i < countRounds; i += 1) {
     const gameData = getGameData();
-    const output = gameData[0];
+    const question = gameData[0];
     const correctAnswer = gameData[1];
-    console.log(`Question: ${output}`);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (correctAnswer === answer) {
