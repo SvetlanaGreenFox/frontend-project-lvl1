@@ -3,23 +3,23 @@ import getRndInteger from '../utils.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getCorrectAnswer = (number) => {
+const isPrime = (number) => {
   if (number < 2) {
-    return 'no';
+    return false;
   }
 
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
-      return 'no';
+      return false;
     }
   }
 
-  return 'yes';
+  return true;
 };
 
 const getGameData = () => {
   const randomNumber = getRndInteger(1, 100);
-  const correctAnswer = getCorrectAnswer(randomNumber).toString();
+  const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
   return [randomNumber, correctAnswer];
 };
 
