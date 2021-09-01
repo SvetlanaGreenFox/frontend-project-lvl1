@@ -3,10 +3,10 @@ import getRndInteger from '../utils.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const checkEven = (number) => number % 2 === 0;
+const isEven = (number) => number % 2 === 0;
 
 const getCorrectAnswer = (question) => {
-  const expectedAnswer = checkEven(question);
+  const expectedAnswer = isEven(question);
 
   if (expectedAnswer) {
     return 'yes';
