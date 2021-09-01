@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const checkAnswer = (answer, expectedAnswer) => answer === expectedAnswer;
-
 export const madeGame = (taskDescription, makeTask) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
@@ -16,9 +14,8 @@ export const madeGame = (taskDescription, makeTask) => {
     const correctAnswer = expression[1];
     console.log(`Question: ${output}`);
     const answer = readlineSync.question('Your answer: ');
-    const check = checkAnswer(correctAnswer, answer);
 
-    if (check) {
+    if (correctAnswer === answer) {
       console.log('Correct!');
       if (i === 2) {
         console.log(`Congratulations, ${userName}!`);
