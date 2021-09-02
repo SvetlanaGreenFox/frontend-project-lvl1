@@ -41,20 +41,20 @@
 &emsp; **Brain-prime**
 
 ### Запуск игры Brain-even
-[![Запуск игры Brain-even]](https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu)
+[![asciicast](https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu.svg)](https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu)
 
 
 ### Запуск игры Brain-calc
-[![Запуск игры Brain-calc]](https://asciinema.org/a/fptIQN5Y6GnrJmDzC6njYqqMW)
+[![asciicast](https://asciinema.org/a/fptIQN5Y6GnrJmDzC6njYqqMW.svg)](https://asciinema.org/a/fptIQN5Y6GnrJmDzC6njYqqMW)
 
 ### Запуск игры Brain-gcd
-[![Запуск игры Brain-gcd]](https://asciinema.org/a/JkECbbQ0hB4QjX4EujCXir1SO)
+[![asciicast](https://asciinema.org/a/JkECbbQ0hB4QjX4EujCXir1SO.svg)](https://asciinema.org/a/JkECbbQ0hB4QjX4EujCXir1SO)
 
-### Запуск игры Brain-progression, демонстрация победы и поражения
-[![Запуск игры Brain-progression]](https://asciinema.org/a/rwITHnwqVxhFq75P30ZD2QMM0")
+### Запуск игры Brain-progression
+[![asciicast](https://asciinema.org/a/rwITHnwqVxhFq75P30ZD2QMM0.svg)](https://asciinema.org/a/rwITHnwqVxhFq75P30ZD2QMM0)
 
-### Запуск игры Brain-prime, демонстрация победы и поражения
-[![Запуск игры Brain-prime]](https://asciinema.org/a/nI8bPFag6I5c0EYcnOiL2w4jS)
+### Запуск игры Brain-prime
+[![asciicast](https://asciinema.org/a/nI8bPFag6I5c0EYcnOiL2w4jS.svg)](https://asciinema.org/a/nI8bPFag6I5c0EYcnOiL2w4jS)
 
 &emsp;
 _____________
