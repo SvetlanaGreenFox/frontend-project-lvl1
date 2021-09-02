@@ -1,4 +1,9 @@
 ## **⭐Игры разума⭐** 
+
+&emsp; Hexlet tests and linter status:
+
+&emsp; [![Actions Status](https://github.com/SvetlanaGreenFox/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/SvetlanaGreenFox/frontend-project-lvl1/actions) &emsp; <a href="https://codeclimate.com/github/SvetlanaGreenFox/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/19034939c8d7858508fb/maintainability" /></a> &emsp; ![example workflow](https://github.com/SvetlanaGreenFox/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
+
 &emsp;
 
 Это пять мини-игр, позволяющих прокачать мозг 🏋️‍♂️
@@ -59,8 +64,3 @@
 &emsp;
 _____________
 ### Проект создан в рамках обучения на HEXLET 👩‍🎓 
-
-&emsp; Hexlet tests and linter status:
-
-&emsp; [![Actions Status](https://github.com/SvetlanaGreenFox/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/SvetlanaGreenFox/frontend-project-lvl1/actions) &emsp; <a href="https://codeclimate.com/github/SvetlanaGreenFox/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/19034939c8d7858508fb/maintainability" /></a> &emsp; ![example workflow](https://github.com/SvetlanaGreenFox/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)
-
