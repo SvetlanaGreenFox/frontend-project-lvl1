@@ -1,4 +1,4 @@
-import madeGame from '../index.js';
+import runGame from '../index.js';
 import getRndInteger from '../utils.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -11,6 +11,6 @@ const getGameData = () => {
   return [randomNumber, correctAnswer];
 };
 
-const startGame = () => madeGame(gameDescription, getGameData);
+const startGame = () => runGame(gameDescription, getGameData);
 
 export default startGame;

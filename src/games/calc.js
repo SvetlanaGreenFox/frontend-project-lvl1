@@ -1,4 +1,4 @@
-import madeGame from '../index.js';
+import runGame from '../index.js';
 import getRndInteger from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
@@ -33,6 +33,6 @@ const getGameData = () => {
   return [question, correctAnswer];
 };
 
-const startGame = () => madeGame(gameDescription, getGameData);
+const startGame = () => runGame(gameDescription, getGameData);
 
 export default startGame;
