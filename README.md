@@ -35,15 +35,15 @@
 
 ✅ Склонируйте созданный репозиторий проекта локально.
 
-✅ Выполните установку командой make install.
+✅ Выполните установку с помощью команд make install и npm link.
 
 ✅ Запусти выбранную игру с помощью команд:
 
-&emsp; **Brain-even**
-&emsp; **Brain-calc**
-&emsp; **Brain-gcd**
-&emsp; **Brain-progression**
-&emsp; **Brain-prime**
+&emsp; **brain-even**
+&emsp; **brain-calc**
+&emsp; **brain-gcd**
+&emsp; **brain-progression**
+&emsp; **brain-prime**
 
 ### Запуск игры Brain-even
 [![asciicast](https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu.svg)](https://asciinema.org/a/PXKkDsSFAREcGvQVFSuqDlOiu)
