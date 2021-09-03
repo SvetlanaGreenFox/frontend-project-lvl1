@@ -21,8 +21,9 @@ const runGame = (gameDescription, getGameData) => {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
       return;
     }
-    console.log(`Congratulations, ${userName}!`);
   }
+
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;
